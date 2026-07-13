@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Auralis</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">AURALIS<span>.</span></a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Producten</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="cart.html" class="cart-link"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <h1>Neem Contact Op</h1>
+    </header>
+
+    <section class="contact-section section-padding">
+        <div class="container contact-wrapper">
+            
+            <div class="contact-info">
+                <h2>Gegevens</h2>
+                <p>Heeft u vragen over uw bestelling of onze technologie? Wij staan voor u klaar.</p>
+                
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Adres</h4>
+                        <p>Gentiaanstraat 15<br>3202 BC Spijkenisse</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <div>
+                        <h4>Telefoon & WhatsApp</h4>
+                        <p><a href="tel:0649857331">06 498 573 31</a></p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>E-mail</h4>
+                        <p><a href="mailto:dhr.roemer@gmail.com">dhr.roemer@gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Naam</label>
+                        <input type="text" id="name" placeholder="Uw naam" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" placeholder="Uw e-mailadres" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Bericht</label>
+                        <textarea id="message" rows="5" placeholder="Waar kunnen we u mee helpen?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Verstuur Bericht</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>AURALIS.</h3>
+                <p>Gentiaanstraat 15, 3202 BC Spijkenisse</p>
+            </div>
+            <div class="footer-socials">
+                <a href="https://www.facebook.com/sybrenjo.roemer" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Auralis Audio. | Website gemaakt door Sybrenjo Roemer.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
