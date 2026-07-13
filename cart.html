@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winkelwagen | Auralis</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">AURALIS<span>.</span></a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Producten</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html" class="active cart-link"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <h1>Uw Winkelwagen</h1>
+    </header>
+
+    <section class="cart-section section-padding">
+        <div class="container">
+            
+            <div id="cart-items-container">
+                </div>
+
+            <div class="cart-summary" id="cart-summary" style="display: none;">
+                <h3>Overzicht</h3>
+                <div class="summary-row">
+                    <span>Subtotaal</span>
+                    <span id="subtotal-price">€ 0.00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Verzendkosten</span>
+                    <span>Gratis</span>
+                </div>
+                <hr>
+                <div class="summary-row total">
+                    <span>Totaal</span>
+                    <span id="total-price">€ 0.00</span>
+                </div>
+                <button class="btn btn-primary btn-block" onclick="checkout()">Afrekenen</button>
+            </div>
+
+            <div id="empty-cart-msg" style="display: none; text-align: center;">
+                <p style="font-size: 1.2rem; margin-bottom: 20px;">Je winkelwagen is nog leeg.</p>
+                <a href="products.html" class="btn btn-primary">Bekijk Producten</a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>AURALIS.</h3>
+                <p>Gentiaanstraat 15, 3202 BC Spijkenisse</p>
+            </div>
+            <div class="footer-socials">
+                <a href="https://www.facebook.com/sybrenjo.roemer" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Auralis Audio. | Website gemaakt door Sybrenjo Roemer.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
